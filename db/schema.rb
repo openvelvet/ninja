@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110185036) do
+ActiveRecord::Schema.define(version: 20141110222426) do
+
+  create_table "pins", force: true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",    null: false
@@ -29,6 +35,8 @@ ActiveRecord::Schema.define(version: 20141110185036) do
     t.string   "name"
     t.datetime "date_of_birth"
     t.boolean  "is_female",              default: false
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
