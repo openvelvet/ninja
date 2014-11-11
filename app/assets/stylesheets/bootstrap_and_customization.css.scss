@@ -10,12 +10,17 @@ $navbar-default-brand-color:      		#1abc9c;
 $brand-primary:                         #c0392b;
 $jumbotron-bg:                          white;
 $text-color:							#666;
+$link-color:							#1abc9c;
+$link-hover-color:						#16a085;
 
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
+
 .center {
-     text-align: center;
+	text-align: center;
 }
+     
 
 .navbar-brand {
      font-weight: bold;

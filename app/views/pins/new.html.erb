@@ -1,5 +1,15 @@
-<h1>New pin</h1>
+<div class="col-md-4 col-md-offset-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+			<h3>New pin</h3>
+			<br>
+			<%= render 'form' %>
+		</div>
+		<div class="panel-footer">
+	    <div class="form-group">
+				<%= link_to 'Back', pins_path %>
+			</div>
+		</div>
+	</div>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', pins_path %>
