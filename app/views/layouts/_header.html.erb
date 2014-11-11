@@ -22,7 +22,7 @@
           <li><%= link_to "Account Settings", edit_user_registration_path %></a></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></a></li>
         <% else %>
-          <!-- <li><%= link_to "Log in", new_user_session_path %></a></li> -->
+        <li><%= link_to "Log in", new_user_session_path %></a></li> 
         <% end -%>  
       </ul>
     </div><!-- /.navbar-collapse -->
