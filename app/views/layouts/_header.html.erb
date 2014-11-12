@@ -15,9 +15,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></a></li>
-        <li><%= link_to "About", about_path %></a></li>
-        <li><%= link_to "Contact", contact_path %></a></li>
         <% if user_signed_in? %>
           <li>
             <%= link_to new_pin_path do %>
@@ -27,6 +24,10 @@
           <li><%= link_to "Account Settings", edit_user_registration_path %></a></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></a></li>
         <% else %>
+        <li><%= link_to "Find Projects", "#" %></a></li>
+        <li><%= link_to "Find Students", "#" %></a></li>
+        <li><%= link_to "How it works", "#" %></a></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></a></li> 
         <li><%= link_to "Log in", new_user_session_path %></a></li> 
         <% end -%>  
       </ul>
